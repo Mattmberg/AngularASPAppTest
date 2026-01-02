@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, signal } from '@angular/core';
+import { Component, signal, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -28,4 +28,12 @@ export class App implements OnInit {
   }
 
   protected readonly title = signal('angularaspapptest.client');
+}
+
+// Define the WeatherForecast interface used by the component
+interface WeatherForecast {
+  date: string; // ISO date string
+  temperatureC: number;
+  temperatureF?: number; // optional if not provided by backend
+  summary?: string; // optional description
 }
