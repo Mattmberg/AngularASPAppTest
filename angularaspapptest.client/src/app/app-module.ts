@@ -7,13 +7,15 @@ import { App } from './app';
 import { TestComponent } from './test-component/test-component';
 import { AboutComponent } from './about-component/about-component';
 import { Login } from './login/login';
+import { Header } from './header/header';
 
 @NgModule({
   declarations: [
     App,
     TestComponent,
     AboutComponent,
-    Login
+    Login,
+    Header
   ],
   imports: [
     BrowserModule, HttpClientModule,
