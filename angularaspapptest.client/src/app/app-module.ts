@@ -8,6 +8,7 @@ import { TestComponent } from './test-component/test-component';
 import { AboutComponent } from './about-component/about-component';
 import { Login } from './login/login';
 import { Header } from './header/header';
+import { Footer } from './footer/footer';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Header } from './header/header';
     TestComponent,
     AboutComponent,
     Login,
-    Header
+    Header,
+    Footer
   ],
   imports: [
     BrowserModule, HttpClientModule,
